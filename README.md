@@ -12,7 +12,6 @@
 | 	3. Make my farm self-sufficient and automated;                    |
 | 	4. Secure a future;                                               |
 | 	6. Bring more happiness to the person I love.                     |
-|                                                                     |
 |=====================================================================|
 |                                                                     |
 | Note 1: ### were written with the assistance of AI.                 |
@@ -20,7 +19,7 @@
 | Note 3: # are simple comments.                                      |
 | Note 4: Names starting with "f_" are my functions.                  |
 | Note 5: Names starting with "pp_" are my small projects.            |
-| Note 6: Names ending with "#" are unsolved exercises.               |
+| Note 5: Names ending with "#" are unsolved exercises.               |
 |                                                                     |
 |=====================================================================|
 .......................................................................
@@ -33,12 +32,11 @@
 |* Poder aprender um ofício que me permita trabalhar a distância;     |
 |* Gerar uma renda que me permita ter dinheiro o suficiente para:     |
 |                                                                     |
-|	1. Poder comprar uma quinta com pelo menos 1 hectare;             |
-|	2. Ter dinheiro para realizar reformas necessárias;               |
-|	3. Tornar a minha quinta se torne autossuficiente e automatizada; |
-|	4. Conquistar um futuro;                                          |
-|   6.Trazer mais felicidade à pessoa que eu amo.                     |
-|                                                                     |
+|	1. Poder comprar uma quinta com pelo menos 1 hectare;               |
+|	2. Ter dinheiro para realizar reformas necessárias;                 |
+|	3. Tornar a minha quinta se torne autossuficiente e automatizada;   |
+|	4. Conquistar um futuro;                                            |
+| 5.Trazer mais felicidade à pessoa que eu amo.                       |
 |=====================================================================|
 |                                                                     |
 |Nota.1: ### foram escritos com auxílio de IAs.                       |
