@@ -2,7 +2,8 @@
 ## Imprima a string em formato de escada invertida.
 
 texto = str(input("Insira uma string: "))
+print(texto)
 
 for char in texto:
-    texto %= 10
+    texto = texto[:-1]
     print(texto)
