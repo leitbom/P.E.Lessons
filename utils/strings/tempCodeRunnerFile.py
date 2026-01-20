@@ -1,8 +1,3 @@
-## Este programa serve para verificar se uma string insrida é ou não um palíndromo
-
-# Função palíndromo
-
-def palindromo():
     texto = str(input("Insira uma string:")) # input de string
     texto = texto.upper() # manipulação para ignorar diferença de caixa
 
@@ -11,14 +6,11 @@ def palindromo():
             continue
         else: # se não troque o caractere por ""
             texto = texto.replace(char,"")
-
-    while texto == "": # enquanto string for vazia retorne False e saia do loop e retorne False
-        return(False)
+    while texto == "": # enquanto string for vazia retorne False e saia do loop
+        print(False)
         break  
     else:  # se não for vazia
         if texto == texto[::-1]: # se for palíndromo retorne True
-            return(True)
+            print(True)
         else: # se não retorne False
-            return(False)
-
-print(palindromo())
+            print(False)
