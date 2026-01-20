@@ -13,14 +13,10 @@ def palindromo():
     maius = texto.upper()
     inverso = maius[::-1]
 
-    # Prender usuário em loop que evita input de strings vazias e cause falsos resultados
+    # Se a string for vazia
 
-    while texto == "":
-        print("é uma string vazia, não é um palindromo!")
-        texto = str(input("Insira um texto para verificação, que não seja vazio: "))
-        texto = texto.replace(" ", "")
-        maius = texto.upper()
-        inverso = maius[::-1]
+    if texto == "":
+        return False, "É uma string vazia, não é um palíndromo!"
 
     # Verificação de palindromo com if/else
     
