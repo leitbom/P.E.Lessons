@@ -53,5 +53,3 @@ if n in extenso:
     print(extenso[n])
 else:
     print("O número inserido está fora do intervalo (1-99)")
-
-# Sei que existe uma forma diferente de fazer esse exercício, mas essa me pareceu mais apropriada por ser para poucos números

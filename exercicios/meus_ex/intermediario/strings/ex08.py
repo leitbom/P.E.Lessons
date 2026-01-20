@@ -17,3 +17,4 @@ else:  # se não for vazia
         print(True)
     else: # se não retorne False
         print(False)
+        
