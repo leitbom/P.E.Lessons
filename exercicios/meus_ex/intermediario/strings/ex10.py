@@ -1,27 +1,26 @@
-## Faça um programa jogo da forca em que o jogador terá 6 chances de descobrir a palavra
-## Utilize um dicionário contendo as possíveis palavras e o módulo random para uma escolha aleatória
+## Faça um programa que utilize uma lista contendo 10 palavras
+## Faça uma escolha aleatória de uma dessas palavras 
+## O usuário possa inserir uma string para tentar adivinhar qual é a palavra
+## O usuário seja avisado de quantas letras ele acertou a cada tentativa
 
-l = ["palavra","coisas","trabalho","retorno","zebra","aulas","fugaz"]
+import random
+p = ["python","anaconda","jupyther","ghostwritter","pagenotfound","error","syntax","exercices","pylovers","gamedev"]
+psecreta = random.choice(p)
+print("="*75)
+print("A palavra secreta possui",len(psecreta),"letras")
+print("="*75)
 
-from random import choice
 
-palavras = choice(l)
-print(palavras)
-lpal1 = []
-lpal2 = []
-lpal = [lpal1,lpal2]
-
-for char in palavras:
-    lpal1.append(char)
-
-for n in range(5):
-    print(lpal2)
-    letra = str(input("Insira uma letra: "))
-    
-    if letra in lpal1:
-        lpal2.append(letra)
+while True:
+    palavra = str(input("Try again..."))
+    if psecreta != palavra:
+        for letra in psecreta:
+            for l in palavra:
+                if letra == l:
+                    print("A palavra contem a/as letras",l)
+        continue
     else:
-        print("não contém essa letra")
-
-
-# my brain... starting to melt... why so hard mommy?
+        print("Congratulations")
+        break
+    
+# tá meio estranho
