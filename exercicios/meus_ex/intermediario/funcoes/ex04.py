@@ -3,25 +3,26 @@
 ## É primo ou não
 ## Mostre na tela os resultados na mesma linha
 
+def nipp():
+    num = int(input("Insira um número: "))
+    def primo():
+        if num <= 1:
+            return "Número inválido para verificação de primo."
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                return "Não é primo."  
+        return "É primo."
+    mp = primo()
 
-# dá pra por as duas dentro da mesma função??? ou exta função se chama módulo ex04.py??
-# estou um pouco confuso...
+    def par_impar():
+        if num%2==0:
+            return "É par."
+        else:
+            return "É ímpar."   
+    mpi = par_impar()
 
-num = int(input("Insira um número: "))
-def primo():
-    if num <= 1:
-        return "Número inválido para verificação de primo."
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            return "Não é primo."  
-    return "É primo."
-mp = primo()
+    return mp,mpi
+    
+print(nipp())
 
-def par_impar():
-    if num%2==0:
-        return "É par."
-    else:
-        return "É ímpar."   
-mpi = par_impar()
-
-print(mp,mpi)
+# o print está sendo mostrado como uma tuple... não sei o que fazer...

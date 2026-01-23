@@ -10,4 +10,6 @@ def primo():
     
     return True
 
-print(primo()) # se for inportar essa função delete esta linha
+print(primo()) # se for importar essa função delete esta linha 
+
+# Caso a função seja invocada talvez seja necessário deletar a segunda linha para um uso somente de verificação
