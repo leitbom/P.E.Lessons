@@ -7,7 +7,7 @@
 ## Mostre uma lista6 contendo os elementos da lista 1 em ordem decrescente
 
 def multi_listas():
-    def primo():
+    def primo(num):
             if num <= 1:
                 return False 
             for i in range(2, int(num**0.5) + 1):
@@ -27,12 +27,13 @@ def multi_listas():
         num = int(input("Insira um elemento inteiro: "))
         print("="*75)
         lista1.append(num)
-        if primo()==True:
+        if primo(num)==True:
             lista4.append(num)
         if num%2!=0:
             lista2.append(num)
         else:
             lista3.append(num)
+
     
     print ("Lista Original ==>",lista1)
     print("="*75)
@@ -42,5 +43,10 @@ def multi_listas():
     print("="*75)
     print ("Lista Primos ==>",lista4)
     print("="*75)
+    print ("Lista Crescente ==>",sorted(lista1))
+    print("="*75)
+    print ("Lista Decrescente ==>",sorted(lista1,reverse=True))
+    print("="*75)
+multi_listas()
 
     

@@ -5,24 +5,22 @@
 
 def nipp():
     num = int(input("Insira um número: "))
-    def primo():
+    def primo(num):
         if num <= 1:
-            return "Número inválido para verificação de primo."
+            print("Número inválido para verificação de primo.")
         for i in range(2, int(num**0.5) + 1):
             if num % i == 0:
-                return "Não é primo."  
-        return "É primo."
-    mp = primo()
+                print("Não é primo.")
+        print("É primo.")
+    mp = primo(num)
 
     def par_impar():
         if num%2==0:
-            return "É par."
+            print("É par.")
         else:
-            return "É ímpar."   
+            print("É ímpar." )  
     mpi = par_impar()
 
     return mp,mpi
     
-print(nipp())
-
-# o print está sendo mostrado como uma tuple... não sei o que fazer...
+nipp()

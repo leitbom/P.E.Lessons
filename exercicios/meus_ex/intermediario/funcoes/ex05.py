@@ -12,6 +12,7 @@
     # print(contador-1)
 # else:
     # return "O tempo acabou!"
+
 def timer():
     import time
     hora = int(input("Insira uma hora: "))
@@ -23,9 +24,9 @@ def timer():
     while timer!=0:
         time.sleep(1)
         timer -= 1
-        return (timer,"segundos restantes")
-    else:
-        return("Fim do timer...acorda cara!")  
+        print(timer,"segundos restantes")
+    print("Fim do timer...acorda cara!") 
+timer()
 
 # Esse programa realiza a tarefa mas não mostra o display de timer...
 # Bom pelo menos ele faz a tarefa...display é meu ovo
