@@ -8,7 +8,7 @@ def float_div_2ints():
         division = first_number / second_number
     except ValueError:
         print("Type not valid.")
-    except ZeroDivisionError:
+    except ArithmeticError:
         print("Can not divide by zero. Run again baby.")
     except:
         print("Something is wrong.")
