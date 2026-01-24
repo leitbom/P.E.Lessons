@@ -10,6 +10,8 @@ def float_div_2ints():
         print("Type not valid.")
     except ZeroDivisionError:
         print("Can not divide by zero. Run again baby.")
+    except:
+        print("Something is wrong.")
     else:
         print(division)
 
