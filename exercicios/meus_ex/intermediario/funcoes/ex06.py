@@ -34,7 +34,6 @@ def multi_listas():
         else:
             lista3.append(num)
 
-    
     print ("Lista Original ==>",lista1)
     print("="*75)
     print ("Lista Ímpares ==>",lista2)
@@ -48,5 +47,3 @@ def multi_listas():
     print ("Lista Decrescente ==>",sorted(lista1,reverse=True))
     print("="*75)
 multi_listas()
-
-    

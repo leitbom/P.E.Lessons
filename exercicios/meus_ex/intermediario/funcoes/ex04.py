@@ -5,14 +5,14 @@
 
 def nipp():
     num = int(input("Insira um número: "))
-    def primo(num):
+    def primo():
         if num <= 1:
             print("Número inválido para verificação de primo.")
         for i in range(2, int(num**0.5) + 1):
             if num % i == 0:
                 print("Não é primo.")
         print("É primo.")
-    mp = primo(num)
+    mp = primo()
 
     def par_impar():
         if num%2==0:
