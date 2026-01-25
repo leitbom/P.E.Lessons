@@ -1,14 +1,16 @@
-## Faça um programa que leia um número inteiro e diga se é par ou ímpar. ##
+## Do a program which takes an integer number as input and tell if its even or odd.
+## Faça um programa que leia um número inteiro e diga se é par ou ímpar.
 
-num = int(input("Insira um número inteiro: "))
-
-if num % 2 == 0:
-    print("="*50)
-    print(num, "é par.")
-    print("="*50)
-
+try:
+    num = int(input("Enter an integer number: "))
+except:
+    print("You've done something wrong.")
 else:
-    print("="*50)
-    print(num, "é ímpar.")
-    print("="*50)
-    
+    if num % 2 == 0:
+        print("="*50)
+        print(num, "is even.")
+        print("="*50)
+    else:
+        print("="*50)
+        print(num, "is odd.")
+        print("="*50)

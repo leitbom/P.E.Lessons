@@ -1,13 +1,11 @@
-## Faça um programa igual o do exercício 2, mas que trabalhe com números racionais
-## (Do a scrip doing the same as exercice 2, but working with floating numbers)
+## Do a program doing the same as exercice 2, but working with floating numbers.
+## Faça um programa igual o do exercício 2, mas que trabalhe com números racionais.
 
 try:
     variavel_1 = float(input("Enter a floating point value to the first variable: "))
     variavel_2 = float(input("Enter a floating point value to the second variable: "))
-
 except:
     print("You've done something wrong.")
-
 else:
     soma = variavel_1 + variavel_2
     sub = variavel_1 - variavel_2
@@ -25,8 +23,7 @@ else:
         print("Exponentiation =", exp)
         print("="*50)
         print("Impossible Division")
-        print("="*50)
-        
+        print("="*50)      
     else:
         print("="*50)
         print("Sum =", soma)
@@ -40,4 +37,3 @@ else:
         divfloat = variavel_1 / variavel_2
         print("Division =", divfloat)
         print("="*50)
-        
