@@ -1,15 +1,21 @@
+## Do a program that reads a string with a phrase entered by the user (including spaces), count:
+## *How many blank spaces are in the sentence.
+## *How many times the vowels a, e, i, o, u appear.
 ## Dado uma string com uma frase informada pelo usuário (incluindo espaços em branco), conte:
 ## *Quantos espaços em branco existem na frase.
 ## *Quantas vezes aparecem as vogais a, e, i, o, u.
 
-texto = str(input("Insira um texto: ")) # input de string
-vogais = "aáàâãeéêiíoóõôuúAÁÀÂÃEÉÊIÍOÓÕÔUÚ" # string contendo vogais minúsculas e maiúsculas e suas possíveis acentuações
-blank = " " # string contendo 1 espaço em branco
-for char in texto: # por cada charactere em texto
-    for vog in vogais: # por cada vogal em vogais
-        if char == vog: # se caractere for igual a vogal
-            cvogais += 1 # contador de vogais +1
-
-        
-print(texto.count(blank)) # conta os espaços brancos 
-print(cvogais) # mostra o contador de vogais
+try:
+    texto = str(input("Enter a string: ")) # input string from user
+    vogais = "aáàâãeéêiíoóõôuúAÁÀÂÃEÉÊIÍOÓÕÔUÚ" # string with all vowels
+    blank = " " # string containing 1 white space
+    cvogais = 0 # vowel counter initialized to 0
+    for char in texto: # for each character in text
+        for vog in vogais: # for each vowel in vowels
+            if char == vog: 
+                cvogais += 1 # vowel counter +1
+except:
+    print("Something went wrong.")
+else:      
+    print(texto.count(blank)) # count white spaces in the string
+    print(cvogais) # show vowels counter

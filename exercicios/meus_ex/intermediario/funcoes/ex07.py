@@ -6,9 +6,6 @@
 def tipo(n):
     print(type(n).__name__)
 
-
-
-
 # Tests
 tipo(5)            
 tipo("texto")     
