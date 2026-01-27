@@ -1,20 +1,24 @@
+## Do a program that reads a string and tells if it is a palindrome or not.
+## The program must ignore case differences and anything that is not a letter.
 ## Faça um programa que leia uma string e diga se é um palíndromo ou não
 ## O programa deve ignorar se a string contém diferenças de tamanhos de letras e tudo que não for letras.
+try:
+    texto = str(input("Insira uma string:")) # input string
+    texto = texto.upper() # manipulation to uppercase
 
-texto = str(input("Insira uma string:")) # input de string
-texto = texto.upper() # manipulação para ignorar diferença de caixa
-
-for char in texto: # para cada caractere na string
-    if char.isupper()==True: # se for caixa alta continue o loop
-        continue
-    else: # se não troque o caractere por ""
-        texto = texto.replace(char,"")
-while texto == "": # enquanto string for vazia retorne False e saia do loop
-    print(False)
-    break  
-else:  # se não for vazia
-    if texto == texto[::-1]: # se for palíndromo retorne True
-        print(True)
-    else: # se não retorne False
+    for char in texto: # for each character in string
+        if char.isupper()==True: # if character is a uppercase letter
+            continue
+        else: # else replace character with empty string
+            texto = texto.replace(char,"")
+    while texto == "": # while string is empty
         print(False)
+        break  
+    else:  # else continue with the program
+        if texto == texto[::-1]: # if it is a palindrome return True
+            print(True)
+        else: # if not return False
+            print(False)
+except:
+    print("Something went wrong.")
         
